@@ -1,5 +1,5 @@
 ## Heuristics ##
-Explenation of the heuristcs that I have used:
+Explanation of the heuristcs that I have used:
 * SimpleDistance: if we are at the goal h(state) = 0 otherwise check if one set is enough to cover all the remaining set, if it is so h(state) = 1 else h(state) = 2. Note that is possible to interate this concept and verify if 2 is enough, but the computational complexity of h increase. 
 * LenDistance: the same of the proffessor h3.
 * FastDistance: the same as LenDistance but we calculate all the sums at the start and we don't recalculate for the specific state, it's faster but less precise.
