@@ -11,3 +11,12 @@ Explanation of the heuristcs that I used:
 
 #### Results ####
 The best in number of node expanded are LenDistance, RandomSamplingDistance and ImbalanceDistance. The first and the second work about the same, however the RandomSamplingDistance is simple to slightly improve increasing the number of tries, but also it became more slowly (it's possible to find a good trade off). ImbalanceDistance performs better if the sets are imbalanced, so there are some columns with less True than others.
+
+### Consistency ###
+Since no all the previous distances are consistent (i.g. RandomSamplingDistance), I check for the max beetwen the previous and the new $ g(state) + h(state) $ and so we have the garancy of consistency. $ \\ $
+Proof:$ \\ $
+Say that $ n $  is a node with $ f(n) = g(n) + h(n) $ and $ n' $ is a successor of $ n $ with $ f(n') = g(n') + h(n') $ $ \\ $
+We have two cases:
+* $ f(n') \ge f(n) \implies g(n') + h(n') \ge g(n) + h(n)  \implies h(n') + (g(n') - g(n)) \ge h(n)$ so is consistent.
+
+* $ f(n') \lt f(n) $ so we forcing $ f(n') = f(n) \implies g(n') + h(n') = g(n) + h(n) \implies h(n') + (g(n') - g(n)) = h(n) \implies h(n') + (g(n') - g(n)) \ge h(n)$ and so the consistency is prooved
