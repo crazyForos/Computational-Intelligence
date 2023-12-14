@@ -24,7 +24,7 @@ The first method is usable only for the first or the second player, it seems to 
 The second method is usable for both the player and again seems to converge to a very good agent.
 
 ### Reference ### 
-Used the code on Github of Professor Squillero. \\
-Used only resources as https://plainenglish.io/blog/building-a-tic-tac-toe-game-with-reinforcement-learning-in-python \\
+Used the code on Github of Professor Squillero. $$ $$
+Used only resources as https://plainenglish.io/blog/building-a-tic-tac-toe-game-with-reinforcement-learning-in-python $$ $$
 Worked with Alessio Cappello (s309450)
 
