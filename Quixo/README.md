@@ -49,7 +49,7 @@ Agent vs Agent winner:
 #### Note ####
 * I slighty changed the game to ensure to make it episodic, so after 50 moves it's considered a tie.
 * I changed the move method without inverting rows and columns because it confused me
-* I cannot charge in the GitHub the Dataset and the Q_table because they are too large 
+* I cannot charge in the GitHub the Q_table because they are too large, but since isn't good it's not of interest
 
 #### Resorces #### 
 * The previous lab
